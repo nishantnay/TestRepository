@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Quick Test Example" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.orasi.utils.debugging.Screenshot" />
+	</listeners>
+	<parameter name="runLocation" value="perfecto" />
+	<parameter name="environment" value="QA" />
+	<parameter name="deviceID" value="04157DF4AC1FA504" />
+	<test name="SampleTest">
+		<classes>
+			<class name="com.lq.ApplicationName.TestMobileTemplate" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

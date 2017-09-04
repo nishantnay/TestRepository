@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="New Desktop Site" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.orasi.utils.debugging.Screenshot" />
+	</listeners>
+	<parameter name="browserUnderTest" value="ff" />
+	<parameter name="environment" value="UAT" />
+	<parameter name="test" value="smoke" />
+	<parameter name="runLocation" value="local" />
+	<parameter name="browserVersion" value="" />
+	<parameter name="operatingSystem" value="windows" />
+ 	<test name="LQ.com">
+ 		<!-- <groups> -->
+			<!-- <run> -->
+			 	<!-- <include name="returns edit reservation" />   -->
+				
+			<!-- </run> -->
+		<!-- </groups> -->
+		<classes>
+			<class name="com.lq.lqdotcom.DesktopRedesignHomeSuite" />
+		</classes>
+	</test> 
+</suite> <!-- Suite -->

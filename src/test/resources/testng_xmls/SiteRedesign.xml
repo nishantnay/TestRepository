@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SiteRedesign Regression" >
+	<listeners>
+		<listener class-name="com.orasi.utils.debugging.Screenshot" />
+	</listeners>
+	<parameter name="browserUnderTest" value="Chrome" />
+	<parameter name="environment" value="UAT" />
+	<parameter name="test" value="smoke" />
+	<parameter name="runLocation" value="local" />
+	<parameter name="browserVersion" value="" />
+	<parameter name="operatingSystem" value="windows" />
+	 
+	  
+ 	<test name="SiteRedesign Regression">
+ 		<groups>
+			<run>
+			 	<include name="Return.Book" />   
+			 	<include name="Guest.Book" />   
+			</run>
+		</groups>
+		<classes>
+			
+			<class name="com.lq.lqdotcom.TestGuestMember" />
+		</classes>
+	</test> 
+	 
+	 	
+
+</suite> <!-- Suite -->

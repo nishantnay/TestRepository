@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LQ Mobile Application" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.orasi.utils.debugging.Screenshot" />
+	</listeners>
+	<parameter name="runLocation" value="perfecto" />
+	<parameter name="environment" value="QA" />
+	<parameter name="deviceID" value="04157DF4AC1FA504" />
+	<test name="LQ Mobile App">
+		<classes>
+			<class name="com.lq.lqmobapp.LQMobAppPOC" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
